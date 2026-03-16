@@ -42,8 +42,8 @@ modules:
       - /share
     sources:
       - type: archive
-        url: http://download.osgeo.org/geos/geos-3.13.1.tar.bz2
-        sha256: df2c50503295f325e7c8d7b783aca8ba4773919cde984193850cf9e361dfd28c
+        url: http://download.osgeo.org/geos/geos-3.14.1.tar.bz2
+        sha256: 3c20919cda9a505db07b5216baa980bacdaa0702da715b43f176fb07eff7e716
         x-checker-data:
           type: anitya
           project-id: 13493
@@ -158,15 +158,6 @@ modules:
       - type: archive
         url: https://github.com/OSGeo/gdal/releases/download/v3.12.0/gdal-3.12.0.tar.gz
         sha256: 44c95baabe6c1a047c1ebe5043e38dd73e4936bc4c481db14efbfd03342eab73
-
-  - name: osm-gps-map
-    buildsystem: autotools
-    config-opts:
-      - --disable-debug
-    sources:
-      - type: git
-        url: https://github.com/nzjrs/osm-gps-map.git
-        commit: 639ea5e02d2cb47cbc15554d61b1ba6b0ee073b6           
  
   - name: gweatherrouting
     buildsystem: simple
@@ -179,4 +170,4 @@ modules:
     sources:
        - type: git
          url: https://github.com/dakk/gweatherrouting.git
-         tag: v0.2.3
+         tag: v0.2.7
